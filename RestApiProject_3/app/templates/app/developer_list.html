@@ -1,0 +1,11 @@
+{% extends "app/base.html" %}
+{%block body_block%}
+
+<h3><a href="http://127.0.0.1:8000/api/dev/">create dev</a>  </h3>
+{%for i in dev%}
+<center>
+<h2><a href="{%url 'app:detail' i.id %}">{{i.name}}</a> </h2>
+{%endfor%}
+
+</center>
+{%endblock%}

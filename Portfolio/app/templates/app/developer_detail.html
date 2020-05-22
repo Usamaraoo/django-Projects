@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+{%block body_block%}
+<div class="jubotron">
+    <center>
+        <br>
+        <img src="{{person.profile_pic.url}}" style="width:200px;height:200px;">
+        <h1>Hy! my name is {{person.name}}</h1>
+        <br>
+
+        <h2>Expertise :{{person.skill}}</h2>
+        <h5>{{person.description_about_u}}</h5>
+        <br>
+        <Bold>Contact me:</Bold>
+<!--        <h5>Email: {{person.mail}}</h5>-->
+        <h5>Phone: {{person.contact_no}}</h5>
+
+
+    </center>
+</div>
+{%endblock%}

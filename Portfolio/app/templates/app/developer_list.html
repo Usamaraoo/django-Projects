@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+{%block body_block%}
+
+
+<center>
+
+    {%for i in developer_list%}
+    <img src="{{i.profile_pic.url}}" alt="{{ i.name }}" style="width:200px;height:200px;">
+    <h2><a href=" {%url 'app:dev_detail' i.id%}">{{i.name}}</a></h2></li>
+
+    <br>
+    {%endfor%}
+</center>
+{%endblock%}
+

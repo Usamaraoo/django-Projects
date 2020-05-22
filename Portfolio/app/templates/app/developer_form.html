@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+{%block body_block%}
+<form>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Portfolio</label>
+
+        <div class="col-sm-10">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="add" class="btn btn-primary">
+        </div>
+    </div>
+</form>
+{%endblock%}
+
